@@ -3,27 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Login"
+        android:layout_marginTop="100dp"
         android:textColor="@color/black"
         android:gravity="center"
         android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_login"
         android:text="Email"
+        android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -31,6 +34,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_email"
+        android:inputType="textEmailAddress"
+        android:background="@color/white"
+        android:padding="10dp"
         android:hint="Enter Email"/>
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -49,6 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_password"
         android:hint="Enter Password"
+        android:background="@color/white"
+        android:padding="10dp"
         android:inputType="textPassword" />
 
 
@@ -58,10 +66,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ed_password"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:text="Login"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Sign In"
+        android:background="@color/teal_200"
         android:textAllCaps="false"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/black" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
